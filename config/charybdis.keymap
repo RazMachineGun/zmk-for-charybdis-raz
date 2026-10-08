@@ -128,7 +128,7 @@
             >;
         };
 
-        button {
+        Button {
             bindings = <
 &trans  &trans     &trans     &trans     &trans     &trans       &trans     &trans     &trans     &trans     &trans     &trans
 &trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(P)  &kp LG(Z)    &kp LG(Z)  &kp LG(V)  &kp LG(C)  &kp LG(X)  &kp LG(Z)  &trans
@@ -136,6 +136,17 @@
 &trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(P)  &kp LG(Z)    &kp LG(Z)  &kp LG(P)  &kp LG(C)  &kp LG(X)  &kp LG(Z)  &trans
                               &trans     &trans     &trans       &trans     &trans
                                          &trans     &trans       &trans
+            >;
+        };
+
+        Media {
+            bindings = <
+&trans  &trans    &trans    &trans     &trans     &trans    &trans            &trans          &trans             &trans           &trans      &trans
+&trans  &trans    &trans    &trans     &trans     &trans    &trans            &trans          &trans             &trans           &trans      &trans
+&trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans    &trans            &kp C_PREVIOUS  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_NEXT  &trans
+&trans  &trans    &trans    &trans     &trans     &trans    &trans            &trans          &trans             &trans           &trans      &trans
+                            &trans     &trans     &trans    &kp C_PLAY_PAUSE  &kp C_MUTE
+                                       &trans     &trans    &kp C_PAUSE
             >;
         };
     };
