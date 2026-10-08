@@ -105,5 +105,27 @@
                                 &trans  &trans    &trans
             >;
         };
+
+        Nav {
+            bindings = <
+&trans  &trans            &trans        &trans            &trans          &trans    &trans         &trans          &trans          &trans        &trans           &trans
+&trans  &trans            &trans        &trans            &trans          &trans    &kp K_REDO     &kp K_PASTE     &kp K_COPY      &kp K_CUT     &kp K_UNDO       &trans
+&trans  &kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans    &kp CAPSLOCK   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
+&trans  &trans            &trans        &trans            &trans          &trans    &kp INSERT     &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &trans
+                                        &trans            &none           &trans    &kp BACKSPACE  &kp DELETE
+                                                          &trans          &trans    &kp RET
+            >;
+        };
+
+        miryokumouse {
+            bindings = <
+&trans  &trans    &trans    &trans     &trans     &trans    &trans         &trans          &trans          &trans        &trans           &trans
+&trans  &trans    &trans    &trans     &trans     &trans    &kp LG(LS(Z))  &kp LG(V)       &kp LG(C)       &kp LG(X)     &kp LG(Z)        &trans
+&trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans    &trans         &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
+&trans  &trans    &trans    &trans     &trans     &trans    &trans         &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans
+                            &trans     &trans     &none     &mkp MB1       &mkp MB3
+                                       &none      &none     &mkp MB2
+            >;
+        };
     };
 };
