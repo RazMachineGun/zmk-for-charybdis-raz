@@ -69,6 +69,39 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        LCLK {
+            bindings = <&mkp LCLK>;
+            key-positions = <31 32>;
+        };
+
+        RCLK {
+            bindings = <&mkp RCLK>;
+            key-positions = <32 33>;
+        };
+
+        SCROLL {
+            bindings = <&mo 3>;
+            key-positions = <31 33>;
+        };
+
+        leftscrollup {
+            bindings = <&msc SCRL_UP>;
+            key-positions = <14 15>;
+            timeout-ms = <30>;
+            layers = <0>;
+        };
+
+        rightscrollup {
+            bindings = <&msc SCRL_DOWN>;
+            key-positions = <38 39>;
+            timeout-ms = <30>;
+            layers = <0>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
