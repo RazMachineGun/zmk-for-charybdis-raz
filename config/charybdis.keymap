@@ -72,17 +72,17 @@
     combos {
         compatible = "zmk,combos";
 
-        LCLK {
+        leftclick {
             bindings = <&mkp LCLK>;
             key-positions = <31 32>;
         };
 
-        RCLK {
+        rightclick {
             bindings = <&mkp RCLK>;
             key-positions = <32 33>;
         };
 
-        SCROLL {
+        scroll {
             bindings = <&mo 3>;
             key-positions = <31 33>;
         };
